@@ -18,7 +18,7 @@
 
 ## 📌 Overview
 
-FreeIPA / Red Hat IdM server configuration hardening auditor
+OIpaX — FreeIPA / Red Hat IdM Server Configuration Auditor. It provides offline, read-only IdM *server* audit — never talks to LDAP / Kerberos / HTTP, never runs `ipa`, never writes; Parsers: `ipa … --all` text, LDIF, CS.cfg / profiles, default.conf, httpd conf.d; --root image discovery. Built-in demo/self-test paths and severity gates help validate detections without touching production when those flags are used.
 
 ---
 
@@ -43,7 +43,10 @@ FreeIPA / Red Hat IdM server configuration hardening auditor
 ## 🚀 Usage
 
 ```bash
-./OIpaX
+./OIpaX                                     # interactive menu
+./OIpaX --scan -r /path/to/root
+./OIpaX --demo
+./OIpaX --help
 ```
 
 ---
